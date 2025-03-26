@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    color: white;
+    font-weight: 400;
+}
+
+span{
+    color: red;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-last{
+    display: flex;
+    gap: 20px;
+}
+
+.name > label{
+    color: white;
+    padding: 10px 0px;
+}
+
+.first-name > p{
+    color: white;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.first-name > input{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.last-name > p{
+    color: white;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.last-name > input{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.email > label{
+    color: white;
+    padding: 10px 0px;
+}
+
+.email > input{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.comment > label{
+    color: white;
+    padding: 10px 0px;
+}
+
+.comment > .text{
+    padding: 20px 50px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.submit{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color: rgb(253, 58, 90);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
