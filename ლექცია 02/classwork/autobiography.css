@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: beige;
+}
+
+.heading{
+    color: green;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    color: blue;
+}
+
+.desc{
+    padding: 10px;
+}
+
+img{
+    padding: 10px;
+    width: 400px;
+}
+
+p{
+    color: red;
+    font-size: 20px;
+}

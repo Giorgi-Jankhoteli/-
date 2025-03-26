@@ -1,0 +1,54 @@
+.div-class{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#div-id{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box-model{
+    padding: 50px;
+    margin: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+
+.float-left{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    float: left;
+}
+
+.float-right{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    float: right;
+}
+
+.img{
+    width: 100%;
+    background-color: transparent;
+}
+
+.img img{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.img p{
+    float: right;
+}

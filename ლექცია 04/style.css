@@ -1,0 +1,54 @@
+.p1{
+    color: red;
+}
+
+#p2{
+    color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 500px;
+    background-color: aquamarine;
+    padding: 50px;
+    margin: 70px;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px blue;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    float: center;
+}
+
+img:hover{
+    transform: rotateX(200deg);
+    transform: rotateY(200deg);
+    transform: rotateZ(10deg);
+}
+
+button{
+    background-color: yellow;
+    color: red;
+    border: 1px solid red;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    color: yellow;
+    background-color: red;
+    border: 2px solid yellow;
+    box-shadow: 5px 5px 10px yellow;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.box:hover{
+    background-color: green;
+}

@@ -1,0 +1,21 @@
+h1{
+    color: red;
+    background-color: green;
+}
+
+h2{
+    color: green;
+    background-color: red;
+}
+
+p{
+    color: yellow;
+    background-color: orange;
+}
+    
+div{
+    color: blue;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
