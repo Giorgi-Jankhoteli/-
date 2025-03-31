@@ -1,0 +1,37 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    background-color: red;
+    order: 2;
+}
+.box2{
+    background-color: blue;
+    order: 1;
+}
+.box3{
+    background-color: green;
+    order: 4;
+}
+.box4{
+    background-color: blueviolet;
+    order: 3;
+}
+.box5{
+    background-color: yellow;
+    order: 6;
+}
+.box6{
+    background-color: orange;
+    order: 5;
+}

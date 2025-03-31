@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 400px;
+    width: 100%;
+    background-image: url(./image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    gap: 20px;
+}
+
+.download button{
+    border: none;
+    background-color: rgb(247, 79, 107);
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description > p{
+    width: 500px;
+    padding-top: 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.description > h1{
+    color: white;
+    font-size: 40px;
+}
+
+main > h1{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery1 > img{
+    width: 460px;
+    height: 300px;
+}
+.gallery2 > img{
+    width: 460px;
+    height: 300px;
+}
+
+.buttons > h1{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section > button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.section > button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.gallery-photos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-photos > img{
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+}
