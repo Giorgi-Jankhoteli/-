@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: rgb(26, 1, 1);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+nav ul li{
+    font-size: 25px;
+    padding: 20px 10px;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav ul li:hover{
+    color: rgb(255, 158, 158);
+}
+
+header > .fashion{
+    display: flex;
+}
+
+.fashion > h1{
+    padding: 20px;
+    color: white;
+}
+
+.main-footer{
+    padding-bottom: 50px;
+}
+
+.main-footer > .footer-follow{
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.register > .email{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    padding: 0px 50px 20px 50px;
+}
+
+.email > label{
+    color: white;
+    opacity: 50%;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.email > input{
+    width: 30%;
+    outline: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    width: 30%;
+}
+
+.buttons > button{
+    padding: 0px 20px 0px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox > label{
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    background-color: rgb(243,182,159);
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    height: 800px;
+}
+
+.hero > h1{
+    padding-left: 300px;
+    font-size: 40px;
+}
+
+.hero > p{
+    font-size: 60px;
+    font-weight: bolder;
+    padding-left: 300px;
+}
+
+a{
+    text-decoration: none
+}
