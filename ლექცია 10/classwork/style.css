@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, white 50%, #cfdcca 50%);
+    position: relative;
+    height: 500vh;
+}
+
+.image > img{
+    width: 750px;
+    height: 750px;
+    border: 20px solid white;
+    position: absolute;
+    left: 350px;
+    top: 100px;
+}
+
+.text{
+    background-color: rgb(194, 193, 193);
+    border: 20px solid white;
+    width: 400px;
+    position: absolute;
+    padding: 20px 0px 20px 20px;
+    left: 900px;
+    top: 200px;
+}
+
+.text > h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.text > h1 >  span{
+    color: rgb(82, 82, 82);
+}
+
+.text > p{
+    font-size: 20px;
+    padding: 30px 10px 30px 0px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 400px;
+    padding-right: 20px;
+    opacity: 60%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid black;
+    text-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}

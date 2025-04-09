@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000vh;
+}
+
+header{
+    background-color: red;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+main{
+    padding-top: 20%;
+}
+
+.sticky{
+    position: sticky;
+    top: 15%;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
