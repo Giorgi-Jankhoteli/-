@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <h1 id="title"></h1>
+    <div class="card">
+        <p id="text">I am first paragraph</p>
+    </div>
+    <p>I am second paragraph</p>
+    <button id="btn" onclick="changeText()">Click Here!</button>
+
+    <br>
+    <br>
+    <br>
+
+    <button id="plus"> + </button>
+    <button id="count"> 0 </button>
+    <button id="minus"> - </button>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="box" class="red-box"></div>
+    <br>
+    <button onclick="toggleColor()" id="colorChange">Color Change</button>
+
+    <br>
+    <br>
+    <br>
+
+    <button id="menu">MENU</button>
+    <ul id="nav" class="hidden">
+        <li>Main Page</li>
+        <li>About Us</li>
+        <li>Contact</li>
+    </ul>
+
+    <br>
+    <br>
+    <br> -->
+
+    <div class="calculator">
+        <header>
+            <div class="header">
+                 <div class="left">
+                    <h1>Calculator</h1>
+                 </div>
+                 <div class="right">
+                    <h1>Theme</h1>
+                    <div class="toggle h3">
+                        <p id="one">1</p>
+                        <p id="two">2</p>
+                        <p id="three">3</p>
+                    </div>
+                 </div>
+
+                 <input type="range" name="range" min="1" max="3">
+                 <datalist id="browser">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                 </datalist>
+            </div>
+        </header>
+
+        <section class="section1">
+            <div class="screen">
+                <form name="calc">
+                    <input type="text" name="text" readonly id="screen">
+                </form>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="flex">
+                <div class="flex1">
+                <button class="square" onclick="document.calc.text.value += '7'">7</button>
+                <button class="square" onclick="document.calc.text.value += '8'">8</button>
+                <button class="square" onclick="document.calc.text.value += '9'">9</button>
+                <button class="square" onclick="del()">Del</button>
+                </div>
+
+                <div class="flex2">
+                <button class="square" onclick="document.calc.text.value += '4'">4</button>
+                <button class="square" onclick="document.calc.text.value += '5'">5</button>
+                <button class="square" onclick="document.calc.text.value += '6'">6</button>
+                <button class="square" onclick="document.calc.text.value += '+'">+</button>
+                </div>
+
+                <div class="flex3">
+                <button class="square" onclick="document.calc.text.value += '1'">1</button>
+                <button class="square" onclick="document.calc.text.value += '2'">2</button>
+                <button class="square" onclick="document.calc.text.value += '3'">3</button>
+                <button class="square" onclick="document.calc.text.value += '-'">-</button>
+                </div>
+
+                <div class="flex4">
+                <button class="square" onclick="document.calc.text.value += '.'">.</button>
+                <button class="square" onclick="document.calc.text.value += '0'">0</button>
+                <button class="square" onclick="document.calc.text.value += '/'">/</button>
+                <button class="square" onclick="document.calc.text.value += '*'">*</button>
+                </div>
+
+                <div class="btns">
+                    <button id="reset" onclick="document.calc.text.value = ''">RESET</button>
+                    <button id="equal" onclick="document.calc.text.value = eval(calc.text.value)">=</button>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
