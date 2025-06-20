@@ -1,71 +1,104 @@
-let color1 = document.getElementById("color1")
-let color2 = document.getElementById("color2")
-let color3 = document.getElementById("color3")
-let color4 = document.getElementById("color4")
-let guess = document.getElementById("guess")
+const scoreDisplay = document.getElementById("score");
+const colorDisplay = document.getElementById("color");
+const start = document.getElementById("start-button");
+const startM = document.getElementById("start-button-m");
+const startH = document.getElementById("start-button-h");
+const boxes = document.querySelectorAll(".box");
+const allBoxes = document.getElementById("boxes")
+const resetBtn = document.getElementById("reset")
 
-function randomColor(){
-    let red = Math.floor(Math.random() * 255)
-    let green = Math.floor(Math.random() * 255)
-    let blue = Math.floor(Math.random() * 255)
+let Score = 0;
+let currentAnswer = -1;
+let colors = [];
 
-    let first = color1.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`
-    let second = color2.style.backgroundColor = `rgb(${blue}, ${green}, ${red})`
-    let third = color3.style.backgroundColor = `rgb(${green}, ${blue}, ${red})`
-    let forth = color4.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
-
-    let allColor = [first, second, third, forth]
-    allColor.sort(function(a, b){return 0.5 - Math.random()})
-
-    guess.style.backgroundColor = allColor[0]
+function Reset(){
+    colors = []
+    boxes.forEach((box, i) => {
+        box.style.backgroundColor = "white";
+        box.classList.add("hover");
+    });
 }
 
-randomColor()
-
-color1.addEventListener("click", function(){
-    if(guess.style.backgroundColor == color1.style.backgroundColor){
-        randomColor()
-    }else{
-        Swal.fire({
-            title: "You Picked Wrong Color",
-            showComfirmButton: true,
-            confirmButtonText: "OK",
-        })
+function getRandomColors(count) {
+    const arr = [];
+    for (let i = 0; i < count; i++) {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        arr.push(`rgb(${r}, ${g}, ${b})`);
     }
-})
+    return arr;
+}
 
-color2.addEventListener("click", function(){
-    if(guess.style.backgroundColor == color2.style.backgroundColor){
-        randomColor()
-    }else{
-        Swal.fire({
-            title: "You Picked Wrong Color",
-            showComfirmButton: true,
-            confirmButtonText: "OK",
-        })
-    }
-})
+boxes.forEach((box, i) => {
+    box.addEventListener("click", () => {
+        if (i === currentAnswer) {
+            alert("Correct");
+            Score += 10;
+            startEasyGame();
+        } else {
+            alert("Wrong Answer");
+            Score -= 5;
+            if (Score < 0) Score = 0;
+            scoreDisplay.textContent = Score;
+        }
+    });
+}); 
 
-color3.addEventListener("click", function(){
-    if(guess.style.backgroundColor == color3.style.backgroundColor){
-        randomColor()
-    }else{
-        Swal.fire({
-            title: "You Picked Wrong Color",
-            showComfirmButton: true,
-            confirmButtonText: "OK",
-        })
-    }
-})
 
-color4.addEventListener("click", function(){
-    if(guess.style.backgroundColor == color4.style.backgroundColor){
-        randomColor()
-    }else{
-        Swal.fire({
-            title: "You Picked Wrong Color",
-            showComfirmButton: true,
-            confirmButtonText: "Try Again",
-        })
-    }
-})
+
+start.addEventListener("click", startEasyGame);
+
+function startEasyGame() {
+
+    Reset()
+
+    colors = getRandomColors(3);
+    currentAnswer = Math.floor(Math.random() * 3);
+    colorDisplay.textContent = colors[currentAnswer];
+    scoreDisplay.textContent = Score;
+
+    boxes.forEach((box, i) => {
+        box.style.backgroundColor = colors[i];
+        box.classList.add("hover");
+    });
+
+}
+
+
+
+startM.addEventListener("click", startMediumGame);
+
+function startMediumGame(){
+
+    Reset()
+
+    colors = getRandomColors(6);
+    currentAnswer = Math.floor(Math.random() * 6);
+    colorDisplay.textContent = colors[currentAnswer];
+    scoreDisplay.textContent = Score;
+
+    boxes.forEach((box, i) => {
+        box.style.backgroundColor = colors[i];
+        box.classList.add("hover");
+    });
+}
+
+
+
+startH.addEventListener("click", startHardGame);
+
+function startHardGame(){
+
+    Reset()
+
+    colors = getRandomColors(9);
+    currentAnswer = Math.floor(Math.random() * 9);
+    colorDisplay.textContent = colors[currentAnswer];
+    scoreDisplay.textContent = Score;
+
+    boxes.forEach((box, i) => {
+        box.style.backgroundColor = colors[i];
+        box.classList.add("hover");
+    });
+}

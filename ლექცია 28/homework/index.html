@@ -8,15 +8,30 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
 </head>
 <body> 
-    
-    <div class="color" id="color1"></div>
-    <div class="color" id="color2"></div>
-    <div class="color" id="color3"></div>
-    <div class="color" id="color4"></div>
-
-    <h1>Guess The Color</h1>
-
-    <div class="guess" id="guess"></div>
+    <h1>Easy Color Game</h1>
+    <h2>Score : <span id="score">0</span></h2>
+    <h2>Guess This Color : <span id="color">None</span></h2>
+    <button id="start-button">Start Easy</button>
+    <button id="start-button-m">Start Medium</button>
+    <button id="start-button-h">Start Hard</button>
+    <button id="reset" onclick="Reset()">Reset</button>
+    <div class="all-boxes">
+    <div id="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    </div>
 
 
     <script src="./main.js"></script>
