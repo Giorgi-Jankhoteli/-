@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <!-- JS will populate navigation -->
+        </ul>
+    </nav>
+    <main>
+        <section id="homePage" class="page">
+            <h1>მთავარი გვერდი</h1>
+            <div id="home-message"></div>
+        </section>
+        <section id="loginPage" class="page hidden">
+            <h2>შესვლა</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-phone">ტელეფონის ნომერი</label>
+                    <input type="text" id="login-phone" name="phone" autocomplete="username">
+                    <span class="error-message" id="login-phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">პაროლი</label>
+                    <input type="password" id="login-password" name="password" autocomplete="current-password">
+                    <span class="error-message" id="login-password-error"></span>
+                </div>
+                <button type="submit" id="login-btn">შესვლა</button>
+            </form>
+            <div class="error-message" id="login-error"></div>
+        </section>
+        <section id="registerPage" class="page hidden">
+            <h2>რეგისტრაცია</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-firstname">სახელი</label>
+                    <input type="text" id="register-firstname" name="firstname">
+                    <span class="error-message" id="register-firstname-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-lastname">გვარი</label>
+                    <input type="text" id="register-lastname" name="lastname">
+                    <span class="error-message" id="register-lastname-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">ტელეფონის ნომერი</label>
+                    <input type="text" id="register-phone" name="phone">
+                    <span class="error-message" id="register-phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">ელფოსტა</label>
+                    <input type="email" id="register-email" name="email">
+                    <span class="error-message" id="register-email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">პაროლი</label>
+                    <input type="password" id="register-password" name="password">
+                    <span class="error-message" id="register-password-error"></span>
+                </div>
+                <button type="submit" id="register-btn">რეგისტრაცია</button>
+            </form>
+            <div class="success-message" id="register-success"></div>
+            <div class="error-message" id="register-error"></div>
+        </section>
+        <section id="profilePage" class="page hidden">
+            <h2>პროფილი</h2>
+            <div id="profile-info">
+                <!-- JS will fill user info -->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
